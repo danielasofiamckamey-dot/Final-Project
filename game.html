@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Daniela McKamey</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="scratch.html">Business</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="game.html">Game</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets//img/fashion-room.avif')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                       <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paper Doll Dress-Up Game</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: sans-serif; background: #f9f9f7; color: #1a1a1a; padding: 1.5rem; }
+    h1 { font-size: 20px; font-weight: 500; margin-bottom: 1rem; }
+    .game { display: flex; gap: 20px; flex-wrap: wrap; }
+    .doll-area { flex: 0 0 190px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .wardrobe { flex: 1; min-width: 280px; }
+    .section-label { font-size: 20px; color: black; font-weight: 600; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .category { margin-bottom: 16px; }
+    .item-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+    .item-btn {
+      background: #f0efea;
+      border: 0.5px solid #ccc;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      color: #1a1a1a;
+      transition: background 0.15s;
+    }
+    .item-btn:hover { background: #e5e4de; }
+    .item-btn.selected { border: 1.5px solid #7F77DD; background: #EEEDFE; color: #3C3489; }
+    .doll-svg { width: 160px; height: 300px; }
+    .rating-area {
+      background: #f0efea;
+      border-radius: 12px;
+      border: 0.5px solid #ccc;
+      padding: 14px 16px;
+      text-align: center;
+      width: 100%;
+    }
+    .stars { font-size: 24px; letter-spacing: 2px; margin: 6px 0; color: #D4A847; }
+    .rating-msg { font-size: 13px; color: #666; min-height: 18px; }
+    .rate-btn {
+      width: 100%;
+      margin-top: 10px;
+      padding: 9px;
+      border: 0.5px solid #bbb;
+      border-radius: 8px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 13px;
+      color: #1a1a1a;
+    }
+    .rate-btn:hover { background: #f0efea; }
+    .restart-btn {
+      display: none;
+      width: 100%;
+      margin-top: 8px;
+      padding: 9px;
+      border: 0.5px solid #7F77DD;
+      border-radius: 8px;
+      background: #EEEDFE;
+      cursor: pointer;
+      font-size: 13px;
+      color: #3C3489;
+    }
+    .confetti-area { font-size: 26px; text-align: center; min-height: 34px; }
+    .tip { font-size: 12px; color: #333; margin-top: 4px; text-align: center; line-height: 1.5; }
+  </style>
+</head>
+<body>
+
+<h1>Paper Doll Dress-Up</h1>
+
+<div class="game">
+  <div class="doll-area">
+    <svg class="doll-svg" viewBox="0 0 160 300" xmlns="http://www.w3.org/2000/svg" id="doll">
+      <circle cx="80" cy="28" r="22" fill="#F5C4A0"/>
+      <ellipse cx="80" cy="29" rx="12" ry="10" fill="#F5C4A0"/>
+      <path d="M60 20 Q80 5 100 20" fill="#5C3A1E"/>
+      <circle cx="73" cy="25" r="2.5" fill="#3C2A1E"/>
+      <circle cx="87" cy="25" r="2.5" fill="#3C2A1E"/>
+      <path d="M74 34 Q80 38 86 34" fill="none" stroke="#C06060" stroke-width="1.5" stroke-linecap="round"/>
+      <rect x="58" y="50" width="44" height="52" rx="4" fill="#F5C4A0"/>
+      <g id="top-layer"></g>
+      <g id="bottom-layer"></g>
+      <rect x="58" y="50" width="44" height="16" rx="3" fill="#F5C4A0"/>
+      <rect x="38" y="52" width="20" height="46" rx="6" fill="#F5C4A0" id="left-arm"/>
+      <rect x="102" y="52" width="20" height="46" rx="6" fill="#F5C4A0" id="right-arm"/>
+      <rect x="62" y="148" width="16" height="80" rx="5" fill="#F5C4A0" id="left-leg"/>
+      <rect x="82" y="148" width="16" height="80" rx="5" fill="#F5C4A0" id="right-leg"/>
+      <rect x="60" y="224" width="18" height="10" rx="4" fill="#888" id="left-shoe"/>
+      <rect x="82" y="224" width="18" height="10" rx="4" fill="#888" id="right-shoe"/>
+    </svg>
+    <div class="confetti-area" id="confetti"></div>
+    <div class="rating-area">
+      <div class="section-label">outfit rating</div>
+      <div class="stars" id="stars">☆☆☆☆☆</div>
+      <div class="rating-msg" id="rating-msg">Choose an outfit, then rate it!</div>
+      <button class="rate-btn" onclick="rateOutfit()">Rate my outfit</button>
+      <button class="restart-btn" id="restart-btn" onclick="restart()">Try again for 5 stars</button>
+    </div>
+    <div class="tip">Tip: dresses or high-quality combos score higher!</div>
+  </div>
+
+  <div class="wardrobe">
+    <div class="category">
+      <div class="section-label">tops</div>
+      <div class="item-grid" id="tops-grid"></div>
+    </div>
+    <div class="category">
+      <div class="section-label">dresses</div>
+      <div class="item-grid" id="dresses-grid"></div>
+    </div>
+    <div class="category">
+      <div class="section-label">bottoms (pants &amp; skirts)</div>
+      <div class="item-grid" id="bottoms-grid"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const tops = [
+  { name: "White tee",        color: "#F0F0F0", sleeve: "#E0E0E0", quality: 2 },
+  { name: "Striped tee",      color: "#D0E8F5", sleeve: "#A0C4DC", quality: 3, stripe: true },
+  { name: "Red blouse",       color: "#E05050", sleeve: "#C03030", quality: 3 },
+  { name: "Black turtleneck", color: "#2C2C2C", sleeve: "#1A1A1A", quality: 4 },
+  { name: "Floral top",       color: "#F9A8C0", sleeve: "#F07099", quality: 4, floral: true },
+  { name: "Gold blazer",      color: "#D4A847", sleeve: "#B8902A", quality: 5 },
+  { name: "Crop top",         color: "#9B59B6", sleeve: "#7D3C98", quality: 2 },
+  { name: "Denim jacket",     color: "#5B8DB8", sleeve: "#3A6A9A", quality: 4 },
+];
+
+const dresses = [
+  { name: "None",               color: null,     quality: 0, isNone: true },
+  { name: "Little black dress", color: "#1A1A1A", bottom: "#111",    quality: 5 },
+  { name: "Floral sundress",    color: "#F9C0D8", bottom: "#E897B8", quality: 4, floral: true },
+  { name: "Red gown",           color: "#C0392B", bottom: "#922B21", quality: 5 },
+  { name: "Blue midi",          color: "#2980B9", bottom: "#1A5276", quality: 4 },
+  { name: "Yellow wrap",        color: "#F4D03F", bottom: "#D4AC0D", quality: 3 },
+];
+
+const bottoms = [
+  { name: "None",          color: null,      quality: 0, isNone: true },
+  { name: "Blue jeans",    color: "#3A6EA5", quality: 3 },
+  { name: "Black trousers",color: "#222222", quality: 4 },
+  { name: "White pants",   color: "#F0F0F0", quality: 3 },
+  { name: "Plaid skirt",   color: "#B03A2E", quality: 3, plaid: true },
+  { name: "Mini skirt",    color: "#8E44AD", quality: 3 },
+  { name: "Flowy maxi",    color: "#1ABC9C", quality: 4 },
+  { name: "Leather skirt", color: "#333333", quality: 4 },
+];
+
+let selected = { top: null, dress: 0, bottom: 0 };
+
+const ratings = [
+  { stars: 1, msgs: ["Hmm, this needs work.", "Keep experimenting!", "Not quite there yet."] },
+  { stars: 2, msgs: ["Getting warmer!", "A few tweaks needed.", "Some good ideas here."] },
+  { stars: 3, msgs: ["Pretty decent!", "Solid outfit!", "Looking good!"] },
+  { stars: 4, msgs: ["Great style!", "Almost perfect!", "Really chic!"] },
+  { stars: 5, msgs: ["Flawless! 5 stars!", "Absolute perfection!", "Fashion icon!"] },
+];
+
+function buildGrid(items, category, gridId) {
+  const grid = document.getElementById(gridId);
+  items.forEach((item, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'item-btn';
+    btn.textContent = item.name;
+    btn.dataset.idx = i;
+    btn.onclick = () => selectItem(category, i, gridId);
+    grid.appendChild(btn);
+  });
+  if (category === 'dress') {
+    grid.querySelectorAll('.item-btn')[0].classList.add('selected');
+  }
+  if (category === 'bottom') {
+    grid.querySelectorAll('.item-btn')[0].classList.add('selected');
+  }
+}
+
+function selectItem(category, idx, gridId) {
+  const grid = document.getElementById(gridId);
+  grid.querySelectorAll('.item-btn').forEach(b => b.classList.remove('selected'));
+  grid.querySelectorAll('.item-btn')[idx].classList.add('selected');
+  selected[category] = idx;
+
+  if (category === 'dress' && idx !== 0) {
+    selected.top = null;
+    document.getElementById('tops-grid').querySelectorAll('.item-btn').forEach(b => b.classList.remove('selected'));
+    selected.bottom = 0;
+    document.getElementById('bottoms-grid').querySelectorAll('.item-btn').forEach((b, i) => {
+      b.classList.toggle('selected', i === 0);
+    });
+  }
+  if (category === 'top') {
+    selected.dress = 0;
+    document.getElementById('dresses-grid').querySelectorAll('.item-btn').forEach((b, i) => {
+      b.classList.toggle('selected', i === 0);
+    });
+  }
+
+  renderDoll();
+  document.getElementById('stars').textContent = '☆☆☆☆☆';
+  document.getElementById('rating-msg').textContent = 'Choose an outfit, then rate it!';
+  document.getElementById('restart-btn').style.display = 'none';
+  document.getElementById('confetti').textContent = '';
+}
+
+function renderDoll() {
+  const topLayer    = document.getElementById('top-layer');
+  const bottomLayer = document.getElementById('bottom-layer');
+  const leftArm     = document.getElementById('left-arm');
+  const rightArm    = document.getElementById('right-arm');
+  const leftLeg     = document.getElementById('left-leg');
+  const rightLeg    = document.getElementById('right-leg');
+  topLayer.innerHTML = '';
+  bottomLayer.innerHTML = '';
+
+  const dressDat  = dresses[selected.dress];
+  const topDat    = selected.top !== null ? tops[selected.top] : null;
+  const bottomDat = selected.bottom !== null ? bottoms[selected.bottom] : null;
+
+  if (dressDat && !dressDat.isNone) {
+    topLayer.innerHTML = `
+      <rect x="52" y="50" width="56" height="56" rx="5" fill="${dressDat.color}"/>
+      ${dressDat.floral ? `<circle cx="65" cy="62" r="4" fill="white" opacity="0.4"/>
+        <circle cx="78" cy="70" r="3" fill="white" opacity="0.4"/>
+        <circle cx="90" cy="60" r="4" fill="white" opacity="0.4"/>` : ''}
+    `;
+    bottomLayer.innerHTML = `<rect x="52" y="100" width="56" height="80" rx="4" fill="${dressDat.bottom}"/>`;
+    leftArm.setAttribute('fill', dressDat.color);
+    rightArm.setAttribute('fill', dressDat.color);
+    leftLeg.setAttribute('fill', '#F5C4A0');
+    rightLeg.setAttribute('fill', '#F5C4A0');
+  } else {
+    if (topDat) {
+      topLayer.innerHTML = `
+        <rect x="55" y="50" width="50" height="54" rx="5" fill="${topDat.color}"/>
+        ${topDat.stripe ? `<rect x="55" y="58" width="50" height="5" fill="${topDat.sleeve}" opacity="0.6"/>
+          <rect x="55" y="72" width="50" height="5" fill="${topDat.sleeve}" opacity="0.6"/>
+          <rect x="55" y="86" width="50" height="5" fill="${topDat.sleeve}" opacity="0.6"/>` : ''}
+        ${topDat.floral ? `<circle cx="67" cy="62" r="4" fill="white" opacity="0.4"/>
+          <circle cx="80" cy="73" r="3" fill="white" opacity="0.4"/>
+          <circle cx="93" cy="63" r="4" fill="white" opacity="0.4"/>` : ''}
+      `;
+      leftArm.setAttribute('fill', topDat.sleeve || topDat.color);
+      rightArm.setAttribute('fill', topDat.sleeve || topDat.color);
+    } else {
+      leftArm.setAttribute('fill', '#F5C4A0');
+      rightArm.setAttribute('fill', '#F5C4A0');
+    }
+
+    if (bottomDat && !bottomDat.isNone) {
+      const isSkirt = ['skirt','maxi','wrap'].some(w => bottomDat.name.toLowerCase().includes(w));
+      if (isSkirt) {
+        bottomLayer.innerHTML = `
+          <path d="M57 102 L103 102 L108 180 L52 180 Z" fill="${bottomDat.color}"/>
+          ${bottomDat.plaid ? `<line x1="57" y1="102" x2="60" y2="180" stroke="white" stroke-width="2" opacity="0.3"/>
+            <line x1="75" y1="102" x2="78" y2="180" stroke="white" stroke-width="2" opacity="0.3"/>
+            <line x1="57" y1="120" x2="103" y2="120" stroke="white" stroke-width="2" opacity="0.3"/>
+            <line x1="55" y1="148" x2="105" y2="148" stroke="white" stroke-width="2" opacity="0.3"/>` : ''}
+        `;
+        leftLeg.setAttribute('fill', '#F5C4A0');
+        rightLeg.setAttribute('fill', '#F5C4A0');
+      } else {
+        bottomLayer.innerHTML = `<rect x="58" y="102" width="44" height="50" rx="3" fill="${bottomDat.color}"/>`;
+        leftLeg.setAttribute('fill', bottomDat.color);
+        rightLeg.setAttribute('fill', bottomDat.color);
+      }
+    } else {
+      leftLeg.setAttribute('fill', '#F5C4A0');
+      rightLeg.setAttribute('fill', '#F5C4A0');
+      bottomLayer.innerHTML = '';
+    }
+  }
+}
+
+function calcScore() {
+  const dressDat  = dresses[selected.dress];
+  const topDat    = selected.top !== null ? tops[selected.top] : null;
+  const bottomDat = selected.bottom !== null ? bottoms[selected.bottom] : null;
+  const wearingDress = dressDat && !dressDat.isNone;
+
+  if (wearingDress) return dressDat.quality;
+  if (!topDat && (!bottomDat || bottomDat.isNone)) return 1;
+  if (!topDat || (!bottomDat || bottomDat.isNone)) return 2;
+
+  const base  = Math.round((topDat.quality + bottomDat.quality) / 2);
+  const bonus = (topDat.quality === 5 && bottomDat.quality >= 4) ? 1 : 0;
+  return Math.min(5, base + bonus);
+}
+
+function rateOutfit() {
+  const score = calcScore();
+  const r     = ratings[score - 1];
+  const msg   = r.msgs[Math.floor(Math.random() * r.msgs.length)];
+  document.getElementById('stars').textContent = '★'.repeat(score) + '☆'.repeat(5 - score);
+  document.getElementById('rating-msg').textContent = msg;
+
+  if (score === 5) {
+    document.getElementById('confetti').textContent = '🎉✨🎊✨🎉';
+    document.getElementById('restart-btn').style.display = 'none';
+  } else {
+    document.getElementById('confetti').textContent = '';
+    document.getElementById('restart-btn').style.display = 'block';
+  }
+}
+
+function restart() {
+  selected = { top: null, dress: 0, bottom: 0 };
+  document.querySelectorAll('.item-btn').forEach(b => b.classList.remove('selected'));
+  document.getElementById('dresses-grid').querySelectorAll('.item-btn')[0].classList.add('selected');
+  document.getElementById('bottoms-grid').querySelectorAll('.item-btn')[0].classList.add('selected');
+  renderDoll();
+  document.getElementById('stars').textContent = '☆☆☆☆☆';
+  document.getElementById('rating-msg').textContent = 'Choose an outfit, then rate it!';
+  document.getElementById('restart-btn').style.display = 'none';
+  document.getElementById('confetti').textContent = '';
+}
+
+buildGrid(tops,    'top',    'tops-grid');
+buildGrid(dresses, 'dress',  'dresses-grid');
+buildGrid(bottoms, 'bottom', 'bottoms-grid');
+renderDoll();
+</script>
+</body>
+</html>
+    </body>
+</html>
