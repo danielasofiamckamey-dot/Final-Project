@@ -3,7 +3,10 @@
    color: white;
    height: 100px;
    line-height: 100px;
-   position: relative;
+   position: Fixed;
+   top: 0; 
+   left: 0; 
+   right: 0;
 }
 
 a:visited{color:white}
