@@ -3,6 +3,7 @@
    color: white;
    height: 100px;
    line-height: 100px;
+   position: fixed;
 }
 
 a:visited{color:white}
